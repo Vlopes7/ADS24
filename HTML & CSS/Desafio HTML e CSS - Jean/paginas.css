@@ -1,0 +1,27 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto  ;
+}
+
+.grid-container div{
+    padding: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.imagem{
+    text-align: center;
+    background-color: #cccccc91;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    padding: 20px;
+}
+
+.conteudo {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+}
