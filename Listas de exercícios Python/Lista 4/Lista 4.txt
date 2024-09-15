@@ -1,0 +1,104 @@
+1 - )
+
+import random
+maior = 0
+menor = 0
+l = list()
+
+for c in range(0,10):
+    t = random.randint(0,100)
+    l.append(t)
+
+    if c == 0:
+        maior = t
+        menor = t
+    if(t > maior):
+        maior = t
+    if(t < menor):
+        menor = t
+
+print(l)
+print(f"O maior valor gerado na lista é {maior}, e o menor é {menor}")
+
+2 - )
+
+import random
+par = list()
+impar = list()
+l = list()
+
+c = 0
+
+for c in range(0,20):
+    t = random.randint(0,100)
+    l.append(t)
+
+    if t % 2 == 0:
+        par.append(t)
+    else:
+        impar.append(t)
+
+print(f"Lista Geral: {l}")
+print(f"Pares:{par}")
+print(f"Ímpares:{impar}")
+
+
+3 -)
+
+import random
+l1 = list()
+l2 = list()
+l3 = list()
+
+for c in range(1,21):
+    t = random.randint(1,100)
+    if c <= 10:
+        l1.append(t)
+    else:
+        l2.append(t)
+
+for k in range(0,10):
+    l3.append(l1[k])
+    l3.append(l2[k])
+
+print(l1)
+print(l2)
+print(l3)
+
+
+4 - )
+
+l1 = list()
+d = '''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your background, we welcome you'''.lower().split()
+
+for palavra in d:
+    if palavra[0] in "python" or palavra[-1] in "python":
+        l1.append(palavra)
+
+print(l1)
+
+
+5 - )
+
+
+d = '''The Python Software Foundation and the global Python
+community welcome and encourage participation by everyone. Our community is based on
+mutual respect, tolerance, and encouragement, and we are working to help each other live up
+to these principles. We want our community to be more diverse: whoever you are, and
+whatever your background, we welcome you'''.lower().split()
+
+c = 0
+
+for palavra in d:
+    if len(palavra) > 4:
+        for letra in palavra:
+            if letra in "python":
+                c = c + 1
+                break
+    
+print(c)
+

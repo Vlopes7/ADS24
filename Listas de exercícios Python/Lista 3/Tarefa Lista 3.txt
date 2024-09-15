@@ -1,0 +1,73 @@
+1 - )
+
+n = 11
+while n < 0 or n > 10:
+    n = float(input("\nDigite uma nota:"))
+
+    if n > 10 or n < 0:
+        print("Nota inválida!")
+    else:
+        print("Nota válida!")
+
+2 - )
+
+a = str(input("/nDigite o nome de usuário:").lower().strip())
+b = str(input("Digite a senha:").lower().strip())
+
+while a == b:
+    print("Usuário e senha inválidos")
+    a = str(input("/nDigite o nome de usuário:").lower().strip())
+    b = str(input("Digite a senha:").lower().strip())
+
+print("Senha válida!")
+
+3 - )
+
+a = 80000
+b = 200000
+
+contador = 0
+
+while a <= b:
+    a += a * 0.03
+    b += b * 0.015
+    contador = contador + 1
+
+print(f"Número de anos necessários para que a população do país A ultrapasse ou iguale a do país B: {contador} anos")
+
+4 - )
+
+# 1, 1, 2, 3, 5, 8, 13, 21, 34, 5
+
+n = int(input("Digite um número:"))
+
+f1 = 1
+f2 = 1
+f3 = 0
+contador = 0
+
+print(f"{f1},{f2}", end = ",")
+
+while (f3 < n):
+    f3 = f1 + f2
+    f1 = f2
+    f2 = f3
+    contador = contador + 1
+
+    print(f"{f3}", end = ",")
+
+5 - )
+
+def mdc(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+
+resultado = mdc(num1, num2)
+print(f"O MDC entre {num1} e {num2} é: {resultado}")
+
+
+

@@ -1,0 +1,156 @@
+1 - )
+
+maior = 0
+a = int(input("Digite a medida do lado A:"))
+b = int(input("Digite a medida do lado B:"))
+c = int(input("Digite a medida do lado C:"))
+
+
+if (a > b) or (a > c):
+    maior = a
+
+if (c > b) or (c > a):
+    maior = c
+
+if (b > a) or (b > c):
+    maior = b
+
+if (maior == 0):
+    print(f"Usando os valores {a},{b} e {c}, forma-se um triângulo equilátero")
+
+else:
+
+    if (a == b) or (a == c):
+        print(f"Usando os valores {a}, {b} e {c}, forma-se um triângulo isósceles")
+
+    elif (a != b) and (a != c):
+        print(f"Usando os valores {a}, {b} e {c}, forma-se um triângulo escaleno")
+    
+    
+2 - )
+
+a = int(input("Digite o ano:"))
+
+if (a % 4 == 0):
+    print(f"O ano {a} é bissexto")
+else:
+    print(f"O ano {a} não é bissexto")
+    
+3 - )
+
+peso = float(input("Digite o peso total dos peixes:"))
+
+if (peso > 50):
+    excesso = peso - 50
+    multa = 4 * excesso
+
+    print(f"O pescador deve pagar uma múlta de {multa} reais")
+
+else:
+    print("O pescador não deverá pagar multa por excesso de peso")
+
+
+4 - )
+
+maior = 0
+a = int(input("Digite o valor A:"))
+b = int(input("Digite o valor B:"))
+c = int(input("Digite o valor C:"))
+
+if (a > b) and (a > c):
+    maior = a
+
+if (c > b) and (c > a):
+    maior = c
+
+if (b > a) and (b > c):
+    maior = b
+
+if (maior == 0):
+    print("Não há um número maior entre os valores digitados.")
+
+else:
+    print(f"O maior valor digitado foi o número {maior}")
+
+
+5 - )
+
+maior = 0
+menor = 0
+a = int(input("Digite o valor A:"))
+b = int(input("Digite o valor B:"))
+c = int(input("Digite o valor C:"))
+
+menor = c
+
+if (a > b) and (a > c):
+    maior = a
+
+elif (a < menor):
+    menor = a
+
+if (c > b) and (c > a):
+    maior = c
+
+elif (c < menor):
+    menor = c
+
+if (b > a) and (b > c):
+    maior = b
+
+elif (b < menor):
+    menor = b
+
+if (maior == 0):
+    print("Não há um número maior ou menor entre os valores digitados.")
+
+else:
+    print(f"O maior valor digitado foi o número {maior} e o menor foi {menor}")
+
+
+6 - )
+
+s = float(input("Digite quanto você ganha por hora:"))
+h = int(input("Digite a quantidade de horas trabalhadas no mês:"))
+
+s = s  * h
+
+# 11% para o Imposto de Renda, 8% para o INSS e 5% para o sindicato
+
+bruto = s
+
+IR = 0.11 * bruto
+
+inss = 0.08 * bruto
+
+sind = 0.05 * bruto
+
+li = bruto - IR - inss - sind
+
+print(f"\nSalário bruto: \033[32m{bruto} reais\033[m")
+print(f"Imposto de renda: \033[32m{IR} reais\033[m")
+print(f"INSS: \033[32m{inss} reais\033[m")
+print("Sindicato: \033[32m{:.2f} reais\033[m".format(sind))
+print("\nO valor do salário líquido é: \033[32m{} reais\033[m".format(li))
+
+
+7 - )
+
+# a cobertura da tinta é de 1 litro para cada 3 metros quadrados
+# a tinta é vendida em latas de 18 litros, que custam R$ 80,00
+
+a = float(input("Digite a quantidade de metros quadrados que irão ser pintados:"))
+
+x = a / 3
+
+print(f"Serão necessárias \033[35m{x} litros de tinta\033[m")
+
+if (x <= 18):
+    print("Será necessária \033[35m1 lata de tinta\033[m, com o custo de 80 reais")
+
+else:
+    t = x / 18
+    c = t * 80
+
+    print("Serão necessárias \033[35m{} latas de tinta\033[m com o custo de \033[32m{:.2f} reais\033[m".format(round(t), c))
+    

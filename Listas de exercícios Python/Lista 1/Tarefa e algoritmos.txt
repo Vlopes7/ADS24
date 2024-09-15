@@ -1,0 +1,175 @@
+1 - )
+
+soma = 0
+
+a = int(input("Digite o primeiro número:"))
+b = int(input("Digite o segundo número:"))
+
+soma = a + b
+
+print("O valor da soma é {}".format(soma))
+
+
+
+2 - ) 
+
+medida1 = 0
+medida = float(input("Digite o valor em metros:"))
+
+# km hm dam m dm cm mm
+
+medida1 = medida * 1000
+
+print("O valor {} m convertido para milímetros é: {} mm".format(medida,medida1))
+
+
+
+3 - )
+
+horas = int(input("Digite o valor das horas:"))
+minutos = int(input("Digite o valor dos minutos:"))
+segundos = int(input("Digite o valor dos segundos:"))
+
+print("A quantidade de segundos totais são de:{} segundos".format((horas * 3600) + (minutos * 60) + (segundos)))
+
+
+
+4 - )
+
+f = 0
+
+salario = float(input("Digite o valor do salário:"))
+p = float(input("Digite quantos porcento foi o aumento do salário:"))
+
+p = (p + 100) / 100
+
+f = salario * p
+
+print("O salário irá de {} reais para {} reais;".format(salario, f))
+
+
+
+
+5 - )
+
+preço = float(input("Digite o preço do produto:"))
+p = int(input("Digite a porcentagem do desconto:"))
+
+p = (100 - p) / 100
+
+f = preço * p
+
+d = preço - f
+
+print("O valor deve ser pago é de {} reais e o valor descontado foi de {} reais".format(f, d))
+
+
+
+6 - )
+
+d = float(input("Digite a distância do percurso (km) da viagem:"))
+v = float(input("Digite a velocidade média (km / h) do veiculo:"))
+
+t = d / v
+
+print("O tempo que a viagem durará é de {} horas".format(t))
+
+t = t * 60
+
+print("O tempo que a viagem durará é de {} minutos".format(t))
+
+
+
+7 - )
+
+c = float(input("Digite o valor da temperatura em celsius:"))
+
+f = (9 * c / 5) + 32
+
+
+print("{}°C convertidos para Fahrenheit é {}°F".format(c, f))
+
+
+
+
+8 - )
+
+f = float(input("Digite o valor da temperatura em Fahrenheit:"))
+
+c = 5 * ((f-32) / 9)
+
+print("{}°F convertidos para Celsius é {}°C".format(f, c))
+
+
+
+9 - )
+
+km = int(input("Digite a quantidade de km percorrido:"))
+d = int(input("Digite a quantidade de dias que o carro foi usado:"))
+
+p = (60 * d) + (0.15 * km)
+
+print("O preço final que deve ser pago é de {} reais".format(p))
+
+
+
+10 - )
+
+c = int(input("Digite a quantidade de cigarros fumados por dia:"))
+a = int(input("Digite há quantos anos fuma:"))
+
+a = a * 365 #Converte anos em dias
+
+t = 10 * c #Tempo perdido por dia, em minutos
+
+t = a * t #Tempo em minutos, necessário converter para dias
+
+f = t / 1440
+
+print("\nO tempo de vida perdido pelo fumante é de {} dias(arredondado);".format(round(f)))
+
+
+
+11 - )
+
+import sys
+
+sys.set_int_max_str_digits(10**7)
+
+r = 2 ** 1000000
+
+c = len(str(r))
+
+print(f"O número 2^1000000 tem {c} caracteres.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
