@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth; 
+    /* ERA SÓ ISSO */
+}
+
+section{
+    min-height: 100vh;
+    padding-top: 3rem;
+}
+
+#sobre{
+    background-color: orchid;
+}
+
+#servicos{
+    background-color: rgb(112, 176, 218);
+}
+
+#contato{
+    background-color: rgb(112, 218, 124);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    position: fixed;
+    background-color: white;
+    height: 2rem;
+    width: 100%;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #FF0054;
+}
