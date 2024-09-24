@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNES Universidade</title>
+    <link rel="stylesheet" href="desafio.css">
+    <link rel="shortcut icon" href="icone.jpg" type="image/x-icon">
+</head>
+<body>
+        <ul>
+            <img class="imagem" src="Imagens/logo.png">
+            <li class="envio"><a href="#Home">Home</a></li>
+            <li class="envio"><a href="#Quem somos">Quem Somos?</a></li>
+            <li class="envio"><a href="#Contato">Contato</a></li>
+        </ul>
+
+    <div class="conteudo">
+        <main>
+            <h1 id="Home" style="padding-top: 100px;">Sobre a Universidade</h1>
+        </main>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil optio autem facilis tenetur consequatur eos saepe quasi ab maxime numquam, veritatis laudantium necessitatibus aliquid, harum itaque excepturi perferendis commodi fugit!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos molestiae ex sit itaque architecto sunt sapiente laudantium, dolor eum cumque! Et debitis distinctio cum accusamus sint sapiente harum, similique deleniti!</p>
+    </div>
+    <br>
+
+    <div class="capa">
+        <img style="border-radius: 10%; margin-top: 20px; margin-bottom: 20px;" src="Imagens/capa.png">
+    </div>
+
+    
+
+    <div class="conteudo">
+        <main>
+            <h1 id="Quem somos">Quem somos?</h1>
+        </main>
+        <br>
+        <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis dolorum rerum optio nesciunt necessitatibus, quo ullam aspernatur magni reiciendis! Dolore voluptas est perspiciatis quae culpa nemo blanditiis aspernatur sunt recusandae!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente totam voluptatem alias illo doloremque cupiditate vitae placeat facilis doloribus dolorum itaque eius distinctio ullam, esse magni delectus perferendis deleniti molestias.</div>
+
+        <br>
+
+        <h1>5 motivos para estudar:</h1>
+        <br>
+        <ol>
+            <li>Material sempre atualizado</li>
+            <li>Tablets em sala de aula</li>
+            <li>Professores renomados</li>
+            <li>Universidade bem avaliada</li>
+            <li>Ótima localização</li>
+        </ol>
+        <br>
+        <h1>Objetivos:</h1>
+        <br>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, omnis voluptas cumque illo, eius laudantium iste earum libero dolorum, cum obcaecati temporibus ut quibusdam. Perferendis totam cum praesentium accusantium eius.</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus eveniet laboriosam quibusdam amet nesciunt accusantium quasi, veniam in molestias culpa et dolor similique facilis ex nisi vel aperiam soluta vitae.</div>
+    </div> 
+    <br>
+    
+    <br>
+    <hr>
+
+    <div class="conteudo">
+        <main>
+            <h1 id="Contato">Entre em Contato:</h1>
+        </main>
+        <br>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ducimus quas eaque, explicabo esse qui incidunt! Error itaque culpa deserunt non minus ratione nobis unde, perferendis amet, sunt officiis illo.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, tempore voluptatem aspernatur accusantium odit voluptatibus libero fugiat unde, ducimus blanditiis tempora sunt! Laudantium illo quod eveniet in, nobis odio quibusdam?</p>
+        <div class="dados">
+            <p>E-mail:</p>
+            <input type="email" placeholder="Digite aqui...">
+            <br>
+            <br>
+            <p>Assunto:</p>
+            <input type="text" placeholder="Digite aqui...">
+            <br>
+            <br>
+            <p>Descrição:</p>
+            <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva aqui..."></textarea><br><br>
+            <input type="button" value="Enviar">
+        </div>
+    </div>
+
+    <br>
+
+    <footer>
+        <p style="text-align: center; padding-bottom: 5%; padding-top: 5%;"><strong>Todos os direitos reservados</strong></p>
+    </footer>
+
+</body>
+</html>
